@@ -5,9 +5,9 @@ Estute Project
 
 **Requirments To start the Application**
 
-——>Go to the application.properties file and add your relative database credentials.
+Step 1: Go to the application.properties file and add your relative database credentials.
 
-——> Insert Query for Inserting Data into Employees Table
+Step 2: Insert Query for Inserting Data into Employees Table
 
 INSERT INTO employees (resource_Id, Resource_Name, experience, Skills) VALUES
 (1, 'Dennis', 4, 'Java,Spring,JMS,MySQL,Angular,React,Web services,Nodejs'),
@@ -17,11 +17,11 @@ INSERT INTO employees (resource_Id, Resource_Name, experience, Skills) VALUES
 (5, 'Maya', 5, 'Spring,SpringBoot,Hibernate,MySQL,PostgreSQL,Nodejs,Python'),
 (6, 'Kumar', 3, 'Java,Redis,MySQL,Javascript');
 
+---------------------------------------------------------------------------------------------------
 
+Created two API's one for  matching **all skills** and one for at **least one skill**.
 
-——> I have created two API’s employees matching all skills and at least one skill.
-
- Scenario 1 : To check the API below I have provided curl command For any one of the skill matches.
+Scenario 1 : To check the API below I have provided curl command For any one of the skill matches.
 
 curl --location --request GET 'http://localhost:8080/api/employees/anyoneskill?skills=Mysql&skills=React&maxExperience=12' \
 --header 'Content-Type: application/json' \
