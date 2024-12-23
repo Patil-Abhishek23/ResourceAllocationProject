@@ -19,20 +19,20 @@ INSERT INTO employees (resource_Id, Resource_Name, experience, Skills) VALUES
 
 ---------------------------------------------------------------------------------------------------
 
-Created two API's one for  matching **all skills** and one for at **least one skill**.
+Created two API's one for  matching **all skills** and one for **at least one skill**.
 
-Scenario 1 : To check the API below I have provided curl command For any one of the skill matches.
+**Scenario 1 : To check the API below I have provided curl command For any one of the skill matches.**
 
 curl --location --request GET 'http://localhost:8080/api/employees/anyoneskill?skills=Mysql&skills=React&maxExperience=12' \
 --header 'Content-Type: application/json' \
 --data '{'
 
-Example output
+**Result output**
 
 ￼<img width="1440" alt="AnyOneSkill" src="https://github.com/user-attachments/assets/e0235b04-9d1e-4b71-80b0-7bb360455438" />
 
 
- Scenario 2 : To check the API below I have provided curl command for all the skill matches.
+**Scenario 2 : To check the API below I have provided curl command for all the skill matches.**
 
 curl --location --request GET 'http://localhost:8080/api/employees/filter?skills=Mysql' \
 --header 'Content-Type: application/json' \
@@ -43,11 +43,11 @@ curl --location --request GET 'http://localhost:8080/api/employees/filter?skills
     "skills": "Java, Spring, SQL"
 },
 
-Example Output
+**Result Output**
 ￼
 
 <img width="1440" alt="Match all Skills" src="https://github.com/user-attachments/assets/a75a8620-e249-4390-86dd-41771284def4" />
 
 
 
-NOTE:Skills and experiences  provided by user.
+NOTE:Skills and experiences provided by user.
