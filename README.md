@@ -3,7 +3,7 @@ A large scale organization requires a solution to manage the resource allocation
 Estute Project
 
 
-Requirments To start the Application
+**Requirments To start the Application**
 
 ——>Go to the application.properties file and the your database credentials.
 
