@@ -5,7 +5,7 @@ Estute Project
 
 **Requirments To start the Application**
 
-——>Go to the application.properties file and the your database credentials.
+——>Go to the application.properties file and add your relative database credentials.
 
 ——> Insert Query for Inserting Data into Employees Table
 
