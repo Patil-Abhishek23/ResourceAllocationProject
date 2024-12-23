@@ -5,9 +5,9 @@ Estute Project
 
 **Steps To start the Application**
 
-Step 1: Go to the **application.properties** file and add your relative database credentials.
+**Step 1:** Go to the **application.properties** file and add your relative database credentials.
 
-Step 2:Run the below Query to Insert Data into Employeess Table
+**Step 2:** Run the below Query to Insert Data into Employeess Table
 
 INSERT INTO employees (resource_Id, Resource_Name, experience, Skills) VALUES
 (1, 'Dennis', 4, 'Java,Spring,JMS,MySQL,Angular,React,Web services,Nodejs'),
