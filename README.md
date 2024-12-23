@@ -38,12 +38,7 @@ curl --location --request GET 'http://localhost:8080/api/employees/anyoneskill?s
 
 curl --location --request GET 'http://localhost:8080/api/employees/filter?skills=Mysql' \
 --header 'Content-Type: application/json' \
---data '{
-    "id":10,
-    "employeeName": "John Doe",
-    "experience": 5,
-    "skills": "Java, Spring, SQL"
-},
+--data '{'
 
 **Result Output**
 ￼
