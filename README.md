@@ -21,7 +21,7 @@ INSERT INTO employees (resource_Id, Resource_Name, experience, Skills) VALUES
 
 Created two API's one for  matching **all skills** and one for **at least one skill**.
 
-**NOTE**:Skills and experiences provided by user.
+**NOTE**:Skills and experiences can be modified.
 
 **Scenario 1 :** To check the API below I have provided curl command For any one of the skill matches.
 
