@@ -36,7 +36,7 @@ curl --location --request GET 'http://localhost:8080/api/employees/anyoneskill?s
 
 **Scenario 2 :** To check the API below I have provided curl command for all the skill matches.
 
-curl --location --request GET 'http://localhost:8080/api/employees/filter?skills=Mysql' \
+curl --location --request GET 'http://localhost:8080/api/employees/filter?skills=docker&skills=Mysql&skills=spring&maxExperience=12' \
 --header 'Content-Type: application/json' \
 --data '{'
 
