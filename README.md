@@ -3,11 +3,11 @@ A large scale organization requires a solution to manage the resource allocation
 Estute Project
 
 
-**Requirments To start the Application**
+**Steps To start the Application**
 
-Step 1: Go to the application.properties file and add your relative database credentials.
+Step 1: Go to the **application.properties** file and add your relative database credentials.
 
-Step 2: Insert Query for Inserting Data into Employees Table
+Step 2:Run the below Query to Insert Data into Employeess Table
 
 INSERT INTO employees (resource_Id, Resource_Name, experience, Skills) VALUES
 (1, 'Dennis', 4, 'Java,Spring,JMS,MySQL,Angular,React,Web services,Nodejs'),
@@ -17,11 +17,12 @@ INSERT INTO employees (resource_Id, Resource_Name, experience, Skills) VALUES
 (5, 'Maya', 5, 'Spring,SpringBoot,Hibernate,MySQL,PostgreSQL,Nodejs,Python'),
 (6, 'Kumar', 3, 'Java,Redis,MySQL,Javascript');
 
----------------------------------------------------------------------------------------------------
+
 
 Created two API's one for  matching **all skills** and one for **at least one skill**.
+**NOTE**:Skills and experiences provided by user.
 
-**Scenario 1 : To check the API below I have provided curl command For any one of the skill matches.**
+**Scenario 1 :** To check the API below I have provided curl command For any one of the skill matches.
 
 curl --location --request GET 'http://localhost:8080/api/employees/anyoneskill?skills=Mysql&skills=React&maxExperience=12' \
 --header 'Content-Type: application/json' \
@@ -32,7 +33,7 @@ curl --location --request GET 'http://localhost:8080/api/employees/anyoneskill?s
 ￼<img width="1440" alt="AnyOneSkill" src="https://github.com/user-attachments/assets/e0235b04-9d1e-4b71-80b0-7bb360455438" />
 
 
-**Scenario 2 : To check the API below I have provided curl command for all the skill matches.**
+**Scenario 2 :** To check the API below I have provided curl command for all the skill matches.
 
 curl --location --request GET 'http://localhost:8080/api/employees/filter?skills=Mysql' \
 --header 'Content-Type: application/json' \
@@ -48,6 +49,3 @@ curl --location --request GET 'http://localhost:8080/api/employees/filter?skills
 
 <img width="1440" alt="Match all Skills" src="https://github.com/user-attachments/assets/a75a8620-e249-4390-86dd-41771284def4" />
 
-
-
-NOTE:Skills and experiences provided by user.
