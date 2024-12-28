@@ -46,6 +46,9 @@ public class EmployeeService {
 		        if (allSkillsMatch) {
 		            result.add(employee.getResourceName());
 		        }
+			    if(result.isEmpty()){
+					result.add("No Employee Found");
+				}
 		    }
 
 		    // Return the names of employees that have matched the skills
