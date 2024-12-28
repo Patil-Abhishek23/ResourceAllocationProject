@@ -46,10 +46,12 @@ public class EmployeeService {
 		        if (allSkillsMatch) {
 		            result.add(employee.getResourceName());
 		        }
-			    if(result.isEmpty()){
+			   
+		    }
+		  //if Employee with all skills not Found
+		   if(result.isEmpty()){
 					result.add("No Employee Found");
 				}
-		    }
 
 		    // Return the names of employees that have matched the skills
 		    return result;
@@ -89,6 +91,10 @@ public class EmployeeService {
 		            result.add(employee.getResourceName());
 		        }
 		    }
+		   //if Employee with any-one skill not Found
+		   if(result.isEmpty()){
+				result.add("No Employee Found");
+			}
 
 		    /// Return the names of employees that have matched any one the skills
 		    return result;
