@@ -32,8 +32,12 @@ class EmployeeController {
     
     //To Retrieve Employees who are having anyone of the skills which are provided by user  
     @GetMapping("/anyoneskill")
-    public List<String> filterWithAltleastEmployees(@RequestParam List<String> skills,
+    public List<String> filterWithAltleastEmployees(@RequestParam (required = false) List<String> skills,
                                          @RequestParam(required = false) Integer maxExperience) {
+	   		 if(skills==null) {
+                                        System.out.println("Please provide atleast one skill");
+                                        return null;
+                                    }
         return service.filterWithAltleastEmployees(skills, maxExperience);
     }
 
