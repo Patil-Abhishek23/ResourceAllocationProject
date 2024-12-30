@@ -16,6 +16,13 @@ public class EmployeeService {
 	  public  EmployeeRepository repository;
 	    
 	  public List<String> filterEmployees(List<String> skills, Integer maxExperience) {
+
+		   //if not even one Skill is Provided 
+		  if (skills == null) {
+                     List<String> result=new ArrayList<>();
+                    result.add("Please provide at least one skill.");
+                     return result;
+                  }
 		    // Retrieve employees based on experience or all employees
 		    List<Employee> employees = (maxExperience != null)
 		            ? repository.findByExperienceLessThanEqual(maxExperience)
@@ -60,6 +67,13 @@ public class EmployeeService {
 	    	
 	  
 	  public List<String> filterWithAltleastEmployees(List<String> skills, Integer maxExperience) {
+
+		  //if not even one Skill is Provided 
+		  if (skills == null) {
+            List<String> result=new ArrayList<>();
+            result.add("Please provide at least one skill.");
+            return result;
+        }
 		  // Retrieve employees based on experience or all employees
 		    List<Employee> employees = (maxExperience != null)
 		            ? repository.findByExperienceLessThanEqual(maxExperience)
