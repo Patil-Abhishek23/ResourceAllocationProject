@@ -15,7 +15,7 @@ public class EmployeeService {
 	  @Autowired
 	  public  EmployeeRepository repository;
 	    
-	  public List<String> filterEmployees(List<String> skills, Integer maxExperience) {
+	  public List<String> filterEmployees(List<String> skills, Float maxExperience) {
 
 		   //if not even one Skill is Provided 
 		  if (skills == null) {
@@ -66,7 +66,7 @@ public class EmployeeService {
 
 	    	
 	  
-	  public List<String> filterWithAltleastEmployees(List<String> skills, Integer maxExperience) {
+	  public List<String> filterWithAltleastEmployees(List<String> skills, Float maxExperience) {
 
 		  //if not even one Skill is Provided 
 		  if (skills == null) {
