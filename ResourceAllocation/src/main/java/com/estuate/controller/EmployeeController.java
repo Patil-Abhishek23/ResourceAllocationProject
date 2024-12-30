@@ -14,17 +14,14 @@ import com.estuate.service.EmployeeService;
 class EmployeeController {
 
 	@Autowired
-    public  EmployeeService service;
+   	 public  EmployeeService service;
 
 	
 	//To Retrieve Employees who are having all the skills which are provided by user
     @GetMapping("/filter")  
     public List<String> filterEmployees(@RequestParam (required = false) List<String> skills,
-                                         @RequestParam(required = false) Integer maxExperience) {
-	    if(skills==null){
-		  System.out.println("Please provide atleast one skill");
-		    return null;
-	    }
+                                         @RequestParam(required = false) Float maxExperience) {
+	  
         return service.filterEmployees(skills, maxExperience);
     }
     
@@ -33,11 +30,8 @@ class EmployeeController {
     //To Retrieve Employees who are having anyone of the skills which are provided by user  
     @GetMapping("/anyoneskill")
     public List<String> filterWithAltleastEmployees(@RequestParam (required = false) List<String> skills,
-                                         @RequestParam(required = false) Integer maxExperience) {
-	   		 if(skills==null) {
-                                        System.out.println("Please provide atleast one skill");
-                                        return null;
-                                    }
+                                         @RequestParam(required = false) Float maxExperience) {
+	   		
         return service.filterWithAltleastEmployees(skills, maxExperience);
     }
 
