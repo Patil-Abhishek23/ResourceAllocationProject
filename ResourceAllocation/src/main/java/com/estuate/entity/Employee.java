@@ -15,7 +15,7 @@ public class Employee {
 
     private String ResourceName;
     
-    private int experience;
+    private float experience;
 
     @Column(length = 500)
     private String skills;
@@ -36,11 +36,11 @@ public class Employee {
 		ResourceName = resourceName;
 	}
 
-	public int getExperience() {
+	public float getExperience() {
 		return experience;
 	}
 
-	public void setExperience(int experience) {
+	public void setExperience(float experience) {
 		this.experience = experience;
 	}
 
